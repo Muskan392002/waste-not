@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Not</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Waste Not</h1>
+        <form id="food-form">
+            <input type="text" id="food-name" placeholder="Food Name" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <input type="date" id="expiration-date" required>
+            <button type="submit">Add Food</button>
+        </form>
+        <div id="inventory">
+            <h2>Food Inventory</h2>
+            <ul id="food-list"></ul>
+        </div>
+        <div id="recipes">
+            <h2>Suggested Recipes</h2>
+            <ul id="recipe-list"></ul>
+        </div>
+        <div id="favorites">
+            <h2>Favorite Recipes</h2>
+            <ul id="favorite-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
